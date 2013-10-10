@@ -1,0 +1,5 @@
+module Omniauth
+  module Recereco
+    VERSION = "0.0.1"
+  end
+end
