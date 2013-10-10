@@ -26,7 +26,10 @@ module OmniAuth
 
       info do
         {
-
+          :userId     => raw_info['userId'],
+          :gender     => raw_info['gender'],
+          :birthyear     => raw_info['birthyear'],
+          :stateCode => raw_info['stateCode']
         }
       end
 
