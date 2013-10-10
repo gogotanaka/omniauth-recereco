@@ -1,11 +1,3 @@
-require "omniauth-recereco/version"
-
-module Omniauth
-  module Recereco
-    # Your code goes here...
-  end
-end
-
 # coding: utf-8
 require 'omniauth/strategies/oauth'
 require 'multi_json'
