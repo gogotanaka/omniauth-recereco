@@ -30,11 +30,7 @@ module OmniAuth
       end
 
       def raw_info
-        from_time = "20130101_000000"
-        page = "0"
         @raw_info ||= MultiJson.load(access_token.get("/api/1/userattr").body)
-        
-        @raw_info ||= MultiJson.load(access_token.get("/api/1/latestreceipt?from=#{from_time}&page=#{page}").body)
       rescue ::Errno::ETIMEDOUT
         raise ::Timeout::Error
       end
